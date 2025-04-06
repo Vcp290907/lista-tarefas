@@ -31,6 +31,5 @@ Este projeto permite aos usuários criar, visualizar e gerenciar uma lista de ta
    ```
 
 4. Vídeo no YouTube explicando
-   ```
-   https://youtu.be/WxSH87EGXGM
-   ```
+
+[![Título do Vídeo](https://img.youtube.com/vi/WxSH87EGXGM/maxresdefault.jpg)](https://www.youtube.com/watch?v=WxSH87EGXGM&ab_channel=ViniciusCoan)
