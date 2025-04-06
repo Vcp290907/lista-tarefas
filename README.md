@@ -25,4 +25,7 @@ Este projeto permite aos usuários criar, visualizar e gerenciar uma lista de ta
     cd lista-tarefas
     ```
 
-3. npm run dev no terminal da pasta
+3. No terminal da pasta
+   ```
+   npm run dev
+   ```
