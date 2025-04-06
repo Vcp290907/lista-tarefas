@@ -1,12 +1,28 @@
-# React + Vite
+# Lista de Tarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de lista de tarefas desenvolvido como parte das aulas de PW.
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto permite aos usuários criar, visualizar e gerenciar uma lista de tarefas. As funcionalidades incluem adicionar novas tarefas, marcar tarefas como concluídas e excluir tarefas.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Adicionar uma nova tarefa
+- Marcar uma tarefa como concluída
+- Excluir uma tarefa
+- Visualizar todas as tarefas
+
+## Como Usar
+
+1. Clone este repositório:
+    ```bash
+    git clone https://github.com/Vcp290907/lista-tarefas.git
+    ```
+
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd lista-tarefas
+    ```
+
+3. npm run dev no terminal da pasta
