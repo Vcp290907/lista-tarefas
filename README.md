@@ -29,3 +29,8 @@ Este projeto permite aos usuários criar, visualizar e gerenciar uma lista de ta
    ```
    npm run dev
    ```
+
+4. Vídeo no YouTube explicando
+   ```
+   https://youtu.be/WxSH87EGXGM
+   ```

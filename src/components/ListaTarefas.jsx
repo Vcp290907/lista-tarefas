@@ -70,7 +70,7 @@ const ListaTarefas = () => {
                     tarefas={tarefas}
                     onRemoverTarefa={removerTarefa}
                     onConcluirTarefa={concluirTarefa}
-                    onTogglePrioridadeTarefa={togglePrioridadeTarefa}
+                    onMudarPrioridadeTarefa={togglePrioridadeTarefa}
                 />
             </div>
         </div>
