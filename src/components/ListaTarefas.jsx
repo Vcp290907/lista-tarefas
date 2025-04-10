@@ -69,6 +69,20 @@ const ListaTarefas = () => {
         );
     };
 
+    // Função para ordenar as tarefas por ordem alfabética
+    const ordenarTarefas = () => {
+        setTarefas((tarefas) =>
+            [...tarefas].sort((a, b) => a.titulo.localeCompare(b.titulo))
+        );
+    };
+
+    // Função para ordenar as tarefas por data de conclusão
+    const ordenarTarefasPorData = () => {
+        setTarefas((tarefas) =>
+            [...tarefas].sort((a, b) => new Date(a.data) - new Date(b.data))
+        );
+    };
+
     //Retorno para o que vai ter no HTML, chamo tambem os arquivos de Formulario e a Lista com as tarefas
 
     return (
@@ -81,6 +95,8 @@ const ListaTarefas = () => {
             </div>
             <div className="card-footer">
                 <h3 className="h5">Suas tarefas</h3>
+                <button onClick={ordenarTarefas} className="btn btn-secondary me-2 mb-3">Ordenar por Título</button>
+                <button onClick={ordenarTarefasPorData} className="btn btn-secondary mb-3">Ordenar por Data</button>
                 <ListaComTarefas
                     tarefas={tarefas}
                     onRemoverTarefa={removerTarefa}
