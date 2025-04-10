@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { format } from "date-fns";
 
+//Função que adiciona as informações da tarefa, como o escrito e data. Alêm de retornar a parte do HTML com os inputs
+
 const TarefasFormulario = ({ onAdicionarTarefa }) => {
   const [textoTarefa, setTextoTarefa] = useState("");
   const [dataTarefa, setDataTarefa] = useState(undefined);

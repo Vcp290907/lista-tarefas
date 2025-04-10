@@ -3,9 +3,12 @@ import TarefasFormulario from "./TarefasFormulario";
 import ListaComTarefas from "./ListaComTarefas";
 
 const ListaTarefas = () => {
+
+    // Estado para armazenar as tarefas
+
     const [tarefas, setTarefas] = useState(() => {
         const tarefasSalvas = localStorage.getItem("tarefas");
-        if (tarefasSalvas) {
+        if (tarefasSalvas) {  //Verifica se há tarefas salvas no localStorage
             try {
                 return JSON.parse(tarefasSalvas).map((tarefa) => ({
                     ...tarefa,
@@ -18,13 +21,17 @@ const ListaTarefas = () => {
         return [];
     });
 
+    // Efeito para salvar as tarefas no localStorage
+
     useEffect(() => {
         localStorage.setItem("tarefas", JSON.stringify(tarefas));
     }, [tarefas]);
 
+    // Funções para adicionar tarefa
+
     const adicionarTarefa = (dataTarefa) => {
         const novaTarefa = {
-            id: Date.now().toString(),
+            id: Date.now().toString(), //Id é para identificar a tarefa
             titulo: dataTarefa.titulo,
             concluida: false,
             data: dataTarefa.data,
@@ -34,6 +41,8 @@ const ListaTarefas = () => {
         setTarefas((tarefas) => [...tarefas, novaTarefa]);
     };
 
+    //função para adicionar a estrelinha de prioridade
+
     const togglePrioridadeTarefa = (id) => {
         setTarefas((tarefas) =>
             tarefas.map((tarefa) =>
@@ -42,9 +51,13 @@ const ListaTarefas = () => {
         );
     };
 
+    //Função para excluir a terefa
+
     const removerTarefa = (id) => {
         setTarefas((tarefas) => tarefas.filter((tarefa) => tarefa.id !== id));
     };
+
+    //Função para marcar a tarefa como concluida
 
     const concluirTarefa = (id) => {
         setTarefas((tarefas) =>
@@ -55,6 +68,8 @@ const ListaTarefas = () => {
             )
         );
     };
+
+    //Retorno para o que vai ter no HTML, chamo tambem os arquivos de Formulario e a Lista com as tarefas
 
     return (
         <div className="card shadow-sm">

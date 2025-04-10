@@ -2,6 +2,8 @@ import React from "react";
 import { format } from "date-fns";
 import { Trash2, Star } from "lucide-react";
 
+//Função para receber as informações da tarefa, exibi-las, e o HTML para mostrar as tarefas
+
 const ListaComTarefas = ({ tarefas, onRemoverTarefa, onConcluirTarefa, onMudarPrioridadeTarefa }) => {
   if (tarefas.length === 0) {
     return <p className="text-center text-muted">Nenhuma tarefa encontrada.</p>;

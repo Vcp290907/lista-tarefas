@@ -1,6 +1,8 @@
 import './App.css'
 import ListaTarefas from "./components/ListaTarefas";
 
+//Redirecionamento para a página de tarefas
+
 const App = () => {
   return (
     <div className="container mt-4">
